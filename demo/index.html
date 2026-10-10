@@ -386,6 +386,11 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
 [data-id="a7b9049"] > .elementor-background-overlay{z-index:1}
 [data-id="a7b9049"] > .elementor-container{position:relative;z-index:2}
 @media (prefers-reduced-motion: reduce){.demo-video{display:none}}
+</style><style>
+.demo-aviso{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.demo-op{display:inline-flex;gap:4px}
+.demo-op button{font:600 12px Arial,sans-serif;border:1px solid #555;background:#222;color:#fff;border-radius:6px;padding:5px 8px;cursor:pointer}
+.demo-op button[aria-pressed="true"]{background:#ff2850;border-color:#ff2850}
 </style></head>
 
 <body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="wp-singular page-template-default page page-id-6616 wp-custom-logo wp-theme-astra theme-astra woocommerce-js ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.9.0 ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header ast-full-width-primary-header elementor-default elementor-kit-1486 elementor-page elementor-page-6616 e--ua-blink e--ua-webkit" data-elementor-device-mode="desktop" style="">
@@ -1050,6 +1055,10 @@ Garside junior high school					</p>
 			
 				
 
-<div class="widget_shopping_cart_live_region screen-reader-text" role="status"></div><div class="demo-aviso">DEMO de la propuesta · todavía no está publicada · <a href="../">volver al antes y después</a></div><script>(function(){var v=document.querySelector('.demo-video');var m=matchMedia('(max-width:1024px)').matches;
-v.poster='../img/'+(m?'hero_video_movil_poster.jpg':'hero_video_pc_poster.jpg');v.src='../img/'+(m?'hero_video_movil.mp4':'hero_video_pc.mp4');
-var p=v.play();if(p&&p.catch)p.catch(function(){});})();</script></body></html>
+<div class="widget_shopping_cart_live_region screen-reader-text" role="status"></div><div class="demo-aviso">DEMO de la propuesta · todavía no está publicada · <a href="../">volver al antes y después</a><span class="demo-op">Portada: <button data-v="1">1 · Niños IA</button><button data-v="2">2 · Foto actual animada</button><button data-v="3">3 · Video real</button><button data-v="0">Sin video</button></span></div><script>(function(){var v=document.querySelector('.demo-video');var m=matchMedia('(max-width:1024px)').matches;
+var F={1:['hero_video_'+(m?'movil':'pc'),'center 8%'],2:['heroB_'+(m?'movil':'pc'),'center 15%'],3:['heroC_'+(m?'movil':'pc'),'center 30%']};
+function poner(k){document.querySelectorAll('.demo-op button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v==k)});
+if(!F[k]){v.pause();v.removeAttribute('src');v.removeAttribute('poster');v.load();v.style.display='none';return;}
+v.style.display='';v.style.objectPosition=F[k][1];v.poster='../img/'+F[k][0]+'_poster.jpg';v.src='../img/'+F[k][0]+'.mp4';var p=v.play();if(p&&p.catch)p.catch(function(){});}
+document.querySelectorAll('.demo-op button').forEach(function(b){b.addEventListener('click',function(){poner(b.dataset.v);try{history.replaceState(null,'','#'+b.dataset.v)}catch(e){}})});
+poner((location.hash||'#1').slice(1));})();</script></body></html>
