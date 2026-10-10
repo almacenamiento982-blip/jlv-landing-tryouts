@@ -1055,10 +1055,10 @@ Garside junior high school					</p>
 			
 				
 
-<div class="widget_shopping_cart_live_region screen-reader-text" role="status"></div><div class="demo-aviso">DEMO de la propuesta · todavía no está publicada · <a href="../">volver al antes y después</a><span class="demo-op">Portada: <button data-v="1">1 · Niños IA</button><button data-v="2">2 · Foto actual animada</button><button data-v="3">3 · Video real</button><button data-v="0">Sin video</button></span></div><script>(function(){var v=document.querySelector('.demo-video');var m=matchMedia('(max-width:1024px)').matches;
+<div class="widget_shopping_cart_live_region screen-reader-text" role="status"></div><div class="demo-aviso">DEMO de la propuesta · todavía no está publicada · <a href="../">volver al antes y después</a><span class="demo-op">Portada: <button data-v="3">Video real (elegida)</button><button data-v="1">Niños IA</button><button data-v="2">Foto actual animada</button><button data-v="0">Sin video</button></span></div><script>(function(){var v=document.querySelector('.demo-video');var m=matchMedia('(max-width:1024px)').matches;
 var F={1:['hero_video_'+(m?'movil':'pc'),'center 8%'],2:['heroB_'+(m?'movil':'pc'),'center 15%'],3:['heroC_'+(m?'movil':'pc'),'center 30%']};
 function poner(k){document.querySelectorAll('.demo-op button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v==k)});
 if(!F[k]){v.pause();v.removeAttribute('src');v.removeAttribute('poster');v.load();v.style.display='none';return;}
 v.style.display='';v.style.objectPosition=F[k][1];v.poster='../img/'+F[k][0]+'_poster.jpg';v.src='../img/'+F[k][0]+'.mp4';var p=v.play();if(p&&p.catch)p.catch(function(){});}
 document.querySelectorAll('.demo-op button').forEach(function(b){b.addEventListener('click',function(){poner(b.dataset.v);try{history.replaceState(null,'','#'+b.dataset.v)}catch(e){}})});
-poner((location.hash||'#1').slice(1));})();</script></body></html>
+poner((location.hash||'#3').slice(1));})();</script></body></html>

@@ -71,7 +71,7 @@ td .tag{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;paddi
 .foto{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:14px}
 .foto .par{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .foto .par > div{min-width:0}
-.foto .par img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;display:block}
+.foto .par img,.foto .par video{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;display:block;background:#000}
 .foto .lbl{font:700 13px/1 "Barlow Condensed",sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .foto .lbl.d{color:var(--accent)}
 .foto ul{margin:0;padding-left:18px;color:var(--ink2)}
@@ -104,7 +104,7 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
   <div class="aviso">
     <span class="chip">Simulación · la web no se ha modificado</span>
     <span class="chip ok">Ya hecho el 10-10: los 4 botones van al tryout 2026-27 y se quitó la sede Walter</span>
-    <span class="chip warn">Pendiente por aprobar: textos y fotos</span>
+    <span class="chip warn">Pendiente por aprobar: textos, video de portada y fotos</span>
   </div>
   <div class="demo-cta">
     <a class="demo-btn" href="demo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Ver la propuesta en pantalla completa</a>
@@ -131,7 +131,7 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
     <figure><figcaption>Antes (hoy)</figcaption><img id="imgA" src="img/movil_antes_hero.jpg" alt="Versión actual de la landing"></figure>
     <figure class="d"><figcaption>Después (propuesta) <a class="demo-btn chico" href="demo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Pantalla completa</a></figcaption><a class="abrir" href="demo/" target="_blank" rel="noopener" title="Ver la propuesta en pantalla completa"><img id="imgD" src="img/movil_despues_hero.jpg" alt="Versión propuesta de la landing"></a></figure>
   </div>
-  <p class="nota-sec" id="nota">Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y foto de Las Vegas en vez del archivo de Miami.</p>
+  <p class="nota-sec" id="nota">Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y de fondo un video real de la academia en cámara lenta (aquí se ve un cuadro; en la demo se ve en movimiento).</p>
 </section>
 
 <section id="textos">
@@ -158,15 +158,18 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
   <h2>Fotos que se proponen cambiar</h2>
   <div class="fotos">
     <article class="foto">
-      <h3>1 · Fondo de la portada</h3>
+      <h3>1 · Fondo de la portada: video real en cámara lenta</h3>
       <div class="par">
         <div><div class="lbl">Hoy</div><img src="img/actual_hero_miami.jpg" alt="Fondo actual: jugador en una cancha de Miami"></div>
-        <div><div class="lbl d">Propuesta</div><img src="img/hero_accion_lv.jpg" alt="Tres jugadores en acción con el uniforme oficial y el skyline de Las Vegas"></div>
+        <div><div class="lbl d">Propuesta</div><video class="vprop" src="img/heroC_pc.mp4" poster="img/heroC_pc_poster.jpg" muted autoplay loop playsinline aria-label="Video real: el equipo con el uniforme de Juventus entrenando, y la bandera de Juventus en la cancha"></video></div>
       </div>
       <ul>
         <li>La foto actual es del archivo de Miami (el nombre del archivo lo dice: <i>bg-tryouts-miami</i>) y es lo primero que ve el padre que llega del anuncio.</li>
-        <li>La propuesta es la misma imagen del anuncio "Ask these five questions": jugadores en acción, uniforme oficial y el skyline de Las Vegas. El padre ve en la web lo mismo que vio en Instagram.</li>
-        <li>Está hecha con IA, como los anuncios. Para la web final se produce en dos formatos (ancho para computador y vertical para celular). En computador, la simulación usa una versión provisional.</li>
+        <li>La propuesta es un video real del reel de pretemporada de @jacademylasvegas (16-09-2026): el equipo con el uniforme de Juventus entrenando y la bandera de Juventus en la cancha. Va en cámara lenta, sin sonido y en bucle de 7 segundos, detrás del título.</li>
+        <li>No hace la página más lenta: primero carga una imagen fija y el video entra después (1,6 MB en computador y 0,9 MB en celular). Si no carga, queda la imagen.</li>
+        <li>Pendiente por confirmar con el equipo de Las Vegas: que la cancha sea de Las Vegas y que ese uniforme blanco siga vigente.</li>
+        <li>El video original es vertical, de celular: en celular se ve bien y en computador queda recortado y algo suave. Más adelante se puede reemplazar por una toma horizontal del videógrafo nuevo.</li>
+        <li>Se probaron otras dos opciones (los niños del anuncio animados con IA y la foto actual animada); se pueden ver en la demo con el selector de portada.</li>
       </ul>
     </article>
     <article class="foto">
@@ -197,7 +200,7 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
     <div><b>Textos.</b> Aprobar la tabla de arriba tal cual o con ajustes.</div>
     <div><b>Plazo del paso 2.</b> Debe ser uno que el staff pueda cumplir siempre.
       <div class="opciones"><span>within 48 hours</span><span>within 2 business days</span><span>within a few days</span></div></div>
-    <div><b>Fotos.</b> Aprobar la portada con la imagen del anuncio y definir la foto de la sede (cuadro del video o foto nueva de Garside).</div>
+    <div><b>Portada y fotos.</b> Aprobar el video real de fondo (confirmar cancha y uniforme) y la foto de la sede.</div>
   </div>
   <p class="nota-sec">Con la aprobación, los cambios se aplican en Elementor en unos 15 minutos. Ya hay un respaldo completo de la página (10-10) para volver atrás si hace falta.</p>
 </section>
@@ -209,7 +212,7 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
 (function () {
   var tam = 'movil', blq = 'hero';
   var notas = {
-    hero: 'Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y foto de Las Vegas en vez del archivo de Miami.',
+    hero: 'Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y de fondo un video real de la academia en cámara lenta (aquí se ve un cuadro; en la demo se ve en movimiento).',
     bienvenida: 'Bienvenida: mismos textos y fotos; cambian los botones y el titular "Boys and girls" ahora dice el rango de edades.',
     pasos: 'Cómo inscribirse: los tres pasos dicen cuánto tarda, quién llama y cuándo se sabe el resultado.',
     sede: 'Sede: foto real de una cancha de Las Vegas en vez de la foto con palmeras.',
