@@ -91,6 +91,7 @@ td .tag{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;paddi
 .cmp figure.d a.abrir:hover img{outline:3px solid var(--accent);outline-offset:-3px}
 .demo-cta{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .demo-cta small{color:var(--muted);font-size:14px;max-width:60ch}
+.corto{margin:0;padding-left:20px;font-size:18px;display:grid;gap:8px;max-width:70ch}
 footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
 </style>
 </head>
@@ -100,15 +101,11 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
 <header>
   <div class="eyebrow">Juventus Academy Las Vegas · Campaña de tryouts</div>
   <h1>Landing de tryouts: antes y después</h1>
-  <p class="lead">Propuesta de mejoras para <a href="https://jacademylasvegas.com/tryouts-2026/" target="_blank" rel="noopener">jacademylasvegas.com/tryouts-2026</a>, la página a la que llevan los anuncios del competitivo (6 a 17 años). Las capturas son de la página real, con los cambios simulados en el navegador.</p>
-  <div class="aviso">
-    <span class="chip">Simulación · la web no se ha modificado</span>
-    <span class="chip ok">Ya hecho el 10-10: los 4 botones van al tryout 2026-27 y se quitó la sede Walter</span>
-    <span class="chip warn">Pendiente por aprobar: textos, video de portada y fotos</span>
-  </div>
+  <p class="lead">Propuesta para <a href="https://jacademylasvegas.com/tryouts-2026/" target="_blank" rel="noopener">jacademylasvegas.com/tryouts-2026</a>, la página a la que llevan los anuncios. La web real todavía no se ha cambiado.</p>
+  
   <div class="demo-cta">
     <a class="demo-btn" href="demo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Ver la propuesta en pantalla completa</a>
-    <small>Abre una copia navegable de la landing con todos los cambios, como si ya estuviera publicada. Se puede ver en el computador y en el celular. Es solo una demo: no dispara el píxel y el sitio real no cambia.</small>
+    <small>Abre la landing nueva completa, como si ya estuviera publicada.</small>
   </div>
 </header>
 
@@ -131,65 +128,36 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
     <figure><figcaption>Antes (hoy)</figcaption><img id="imgA" src="img/movil_antes_hero.jpg" alt="Versión actual de la landing"></figure>
     <figure class="d"><figcaption>Después (propuesta) <a class="demo-btn chico" href="demo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Pantalla completa</a></figcaption><a class="abrir" href="demo/" target="_blank" rel="noopener" title="Ver la propuesta en pantalla completa"><img id="imgD" src="img/movil_despues_hero.jpg" alt="Versión propuesta de la landing"></a></figure>
   </div>
-  <p class="nota-sec" id="nota">Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y de fondo un video real de la academia en cámara lenta (aquí se ve un cuadro; en la demo se ve en movimiento).</p>
+  <p class="nota-sec" id="nota">Portada: video real de fondo, edades a la vista y botón nuevo.</p>
 </section>
 
 <section id="textos">
-  <h2>Cambios de texto</h2>
-  <p>Los anuncios dicen "Book your tryout · Ages 6–17"; se propone que la landing repita lo mismo para que el padre confirme en un segundo que llegó al lugar correcto y que su hijo entra en el rango.</p>
-  <div class="tabla">
-  <table>
-    <thead><tr><th style="width:15%">Dónde</th><th style="width:27%">Antes</th><th style="width:30%">Después</th><th>Por qué</th></tr></thead>
-    <tbody>
-      <tr><td>Título de portada</td><td class="antes">Tryouts Season 2026-27</td><td class="despues">Tryouts 2026-27</td><td>En celular el "27" queda solo en una línea.</td></tr>
-      <tr><td>Subtítulo nuevo</td><td class="antes">(no existe)</td><td class="despues">FREE TRYOUT · BOYS &amp; GIRLS · AGES 6–17</td><td>Edad y gratuidad antes del botón: filtra familias fuera del rango y quita la duda del costo.<br><span class="chip ok" style="margin-top:6px;padding:2px 8px;font-size:12px">Confirmado: el tryout es gratis</span></td></tr>
-      <tr><td>Los 4 botones</td><td class="antes">REGISTER NOW</td><td class="despues">BOOK YOUR FREE TRYOUT</td><td>Mismo llamado que el anuncio, y deja claro que es el tryout y no la inscripción a la temporada.</td></tr>
-      <tr><td>Titular "Boys and girls"</td><td class="antes">Boys and girls are welcome!</td><td class="despues">Boys and girls ages 6–17 are welcome!</td><td>Repite el rango en el bloque donde se habla de quién puede venir.</td></tr>
-      <tr><td>Paso 1</td><td class="antes">Register for tryouts at your preferred location by creating a Play Metrics account.</td><td class="despues">Register online in about 2 minutes. You’ll create a free PlayMetrics account and add your player’s info.</td><td>Dice cuánto tarda y que la cuenta es gratis; corrige "Play Metrics". Ya no hay "location" que elegir (queda solo Garside).</td></tr>
-      <tr><td>Paso 2</td><td colspan="2" style="color:var(--ink2)">You’ll receive a confirmation email with your age group’s date and time. Stay updated by following us on Instagram for daily updates.</td><td>Se deja como está: no hay un plazo fijo para contactar a las familias, así que no se promete uno.</td></tr>
-      <tr><td>Paso 3</td><td class="antes">After the tryout, please allow a few days to a week to receive your invitation letter.</td><td class="despues">After the tryout, our coaches will tell you which team fits your player, usually within a week.</td><td>Mismo plazo, en tono más cercano: habla del equipo del jugador, no de una "carta".</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <p class="nota-sec">No cambian: enlaces de los botones (programa 2026-27), píxel de Meta, evento Lead, diseño, colores ni el resto de los textos.</p>
+  <h2>Qué cambia</h2>
+  <ul class="corto">
+    <li><b>Portada:</b> video real de la academia de fondo, en vez de la foto de Miami.</li>
+    <li><b>Edades a la vista:</b> "Free tryout · Boys &amp; girls · Ages 6–17".</li>
+    <li><b>Botones:</b> "Book your free tryout" en vez de "Register now".</li>
+    <li><b>Pasos 1 y 3:</b> más claros. El paso 2 queda igual.</li>
+    <li><b>Sede:</b> foto de la cancha de Las Vegas.</li>
+  </ul>
 </section>
 
 <section id="fotos">
-  <h2>Fotos que se proponen cambiar</h2>
+  <h2>Portada y foto de la sede</h2>
   <div class="fotos">
     <article class="foto">
-      <h3>1 · Fondo de la portada: video real en cámara lenta</h3>
+      <h3>Portada</h3>
       <div class="par">
-        <div><div class="lbl">Hoy</div><img src="img/actual_hero_miami.jpg" alt="Fondo actual: jugador en una cancha de Miami"></div>
-        <div><div class="lbl d">Propuesta</div><video class="vprop" src="img/heroC_pc.mp4" poster="img/heroC_pc_poster.jpg" muted autoplay loop playsinline aria-label="Video real: el equipo con el uniforme de Juventus entrenando, y la bandera de Juventus en la cancha"></video></div>
+        <div><div class="lbl">Hoy · foto de Miami</div><img src="img/actual_hero_miami.jpg" alt="Fondo actual: jugador en una cancha de Miami"></div>
+        <div><div class="lbl d">Propuesta · video real en cámara lenta</div><video class="vprop" src="img/heroC_pc.mp4" poster="img/heroC_pc_poster.jpg" muted autoplay loop playsinline aria-label="Video real: el equipo con el uniforme de Juventus entrenando y la bandera de Juventus"></video></div>
       </div>
-      <ul>
-        <li>La foto actual es del archivo de Miami (el nombre del archivo lo dice: <i>bg-tryouts-miami</i>) y es lo primero que ve el padre que llega del anuncio.</li>
-        <li>La propuesta es un video real del reel de pretemporada de @jacademylasvegas (16-09-2026): el equipo con el uniforme de Juventus entrenando y la bandera de Juventus en la cancha. Va en cámara lenta, sin sonido y en bucle de 7 segundos, detrás del título.</li>
-        <li>No hace la página más lenta: primero carga una imagen fija y el video entra después (1,6 MB en computador y 0,9 MB en celular). Si no carga, queda la imagen.</li>
-        <li>Pendiente por confirmar con el equipo de Las Vegas: que la cancha sea de Las Vegas y que ese uniforme blanco siga vigente.</li>
-        <li>El video original es vertical, de celular: en celular se ve bien y en computador queda recortado y algo suave. Más adelante se puede reemplazar por una toma horizontal del videógrafo nuevo.</li>
-        <li>Se probaron otras dos opciones (los niños del anuncio animados con IA y la foto actual animada) y se eligió el video real.</li>
-      </ul>
     </article>
     <article class="foto">
-      <h3>2 · Foto de la sede</h3>
+      <h3>Sede</h3>
       <div class="par">
-        <div><div class="lbl">Hoy</div><img src="img/actual_sede.jpg" alt="Foto actual de la sede: cancha con palmeras"></div>
-        <div><div class="lbl d">Propuesta</div><img src="img/garside_campo_lv.jpg" alt="Cancha real de Las Vegas durante un tryout"></div>
+        <div><div class="lbl">Hoy · no es Garside</div><img src="img/actual_sede.jpg" alt="Foto actual de la sede: cancha con palmeras"></div>
+        <div><div class="lbl d">Propuesta · cancha de Las Vegas</div><img src="img/garside_campo_lv.jpg" alt="Cancha de Las Vegas con jugadores con el uniforme de Juventus"></div>
       </div>
-      <ul>
-        <li>La foto actual no parece Garside Junior (palmeras y paisaje tipo Miami). Un padre de Las Vegas que conoce la escuela lo nota.</li>
-        <li>La propuesta parte de un cuadro real del video de cierre de los tryouts de Las Vegas (cancha con la escuela al fondo). Como el video es de baja resolución, se rehízo con ChatGPT: misma escena y encuadre, nítida y con los jugadores con el uniforme oficial en vez de petos.</li>
-        <li>La escena coincide con la vista satelital de Garside Junior (300 S Torrey Pines Dr): canchas de básquet frente al edificio, la piscina pública con el tobogán amarillo al lado y la cancha al sur, que en la imagen satelital estaba en obra. Se recomienda que alguien del equipo de Las Vegas lo confirme con una mirada.</li>
-      </ul>
-    </article>
-    <article class="foto">
-      <h3>Se mantienen</h3>
-      <ul>
-        <li>Foto de estudio de las cuatro jugadoras y la de niño y niña: son profesionales, con el uniforme oficial, y refuerzan "boys and girls".</li>
-        <li>Fondo de pasto de la sección de bienvenida: es neutro y no se reconoce como otra ciudad.</li>
-      </ul>
     </article>
   </div>
 </section>
@@ -197,10 +165,10 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
 <section id="pendiente">
   <h2>Pendiente por aprobar</h2>
   <div class="pend">
-    <div><b>Textos.</b> Aprobar la tabla de arriba tal cual o con ajustes.</div>
-    <div><b>Portada y fotos.</b> Aprobar el video real de fondo (confirmar cancha y uniforme) y la foto de la sede.</div>
+    <div><b>Textos</b> de la portada, los botones y los pasos.</div>
+    <div><b>Video de la portada:</b> confirmar que la cancha y el uniforme son los de Las Vegas.</div>
+    <div><b>Foto de la sede:</b> confirmar que es Garside.</div>
   </div>
-  <p class="nota-sec">Con la aprobación, los cambios se aplican en Elementor en unos 15 minutos. Ya hay un respaldo completo de la página (10-10) para volver atrás si hace falta.</p>
 </section>
 
 <footer>Juventus Academy Las Vegas · Propuesta de landing de tryouts · 10-10-2026 · Página interna, no indexada.</footer>
@@ -210,11 +178,11 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
 (function () {
   var tam = 'movil', blq = 'hero';
   var notas = {
-    hero: 'Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y de fondo un video real de la academia en cámara lenta (aquí se ve un cuadro; en la demo se ve en movimiento).',
-    bienvenida: 'Bienvenida: mismos textos y fotos; cambian los botones y el titular "Boys and girls" ahora dice el rango de edades.',
-    pasos: 'Cómo inscribirse: el paso 1 dice cuánto tarda y el paso 3 cuándo se sabe el resultado; el paso 2 se deja igual.',
-    sede: 'Sede: foto real de una cancha de Las Vegas en vez de la foto con palmeras.',
-    completa: 'Página completa: desliza dentro del recuadro para ver toda la landing.'
+    hero: 'Portada: video real de fondo, edades a la vista y botón nuevo.',
+    bienvenida: 'Bienvenida: botones nuevos y el rango de edades en el titular.',
+    pasos: 'Cómo inscribirse: pasos 1 y 3 más claros; el paso 2 queda igual.',
+    sede: 'Sede: foto de la cancha de Las Vegas.',
+    completa: 'Página completa: desliza dentro del recuadro.'
   };
   var cmp = document.getElementById('cmp'), A = document.getElementById('imgA'), D = document.getElementById('imgD'), nota = document.getElementById('nota');
   function pintar() {
