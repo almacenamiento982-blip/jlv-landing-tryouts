@@ -52,7 +52,7 @@ section{margin-top:52px}
 .cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;align-items:start}
 .cmp.movil{max-width:860px}
 .cmp figure{margin:0;min-width:0}
-.cmp figcaption{font:700 15px/1 "Barlow Condensed",sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.cmp figcaption{flex-wrap:wrap;font:700 15px/1 "Barlow Condensed",sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
 .cmp figcaption::before{content:"";width:10px;height:10px;border-radius:2px;background:var(--muted)}
 .cmp figure.d figcaption::before{background:var(--accent)}
 .cmp img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#000}
@@ -82,6 +82,15 @@ td .tag{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;paddi
 .pend b{font-weight:600}
 .opciones{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .opciones span{font-size:14px;padding:4px 10px;border-radius:6px;background:var(--bg);border:1px solid var(--line)}
+.demo-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font:700 16px/1 "Barlow Condensed",Barlow,sans-serif;letter-spacing:1.2px;text-transform:uppercase;padding:12px 18px;border-radius:8px}
+.demo-btn:hover{filter:brightness(1.08)}
+.demo-btn svg{width:16px;height:16px}
+.demo-btn.chico{font-size:13px;padding:6px 10px;margin:-6px 0 -6px auto;letter-spacing:.8px}
+.cmp figure.d a.abrir{display:block;position:relative}
+.cmp figure.d a.abrir::after{content:"Ver en pantalla completa";position:absolute;left:50%;bottom:14px;transform:translateX(-50%);background:rgba(0,0,0,.78);color:#fff;font:600 13px Barlow,sans-serif;padding:7px 12px;border-radius:999px;white-space:nowrap;pointer-events:none}
+.cmp figure.d a.abrir:hover img{outline:3px solid var(--accent);outline-offset:-3px}
+.demo-cta{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.demo-cta small{color:var(--muted);font-size:14px;max-width:60ch}
 footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
 </style>
 </head>
@@ -96,6 +105,10 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
     <span class="chip">Simulación · la web no se ha modificado</span>
     <span class="chip ok">Ya hecho el 10-10: los 4 botones van al tryout 2026-27 y se quitó la sede Walter</span>
     <span class="chip warn">Pendiente por aprobar: textos y fotos</span>
+  </div>
+  <div class="demo-cta">
+    <a class="demo-btn" href="demo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Ver la propuesta en pantalla completa</a>
+    <small>Abre una copia navegable de la landing con todos los cambios, como si ya estuviera publicada. Se puede ver en el computador y en el celular. Es solo una demo: no dispara el píxel y el sitio real no cambia.</small>
   </div>
 </header>
 
@@ -116,7 +129,7 @@ footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid va
   </div>
   <div class="cmp movil" id="cmp">
     <figure><figcaption>Antes (hoy)</figcaption><img id="imgA" src="img/movil_antes_hero.jpg" alt="Versión actual de la landing"></figure>
-    <figure class="d"><figcaption>Después (propuesta)</figcaption><img id="imgD" src="img/movil_despues_hero.jpg" alt="Versión propuesta de la landing"></figure>
+    <figure class="d"><figcaption>Después (propuesta) <a class="demo-btn chico" href="demo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M14 4h6v6M20 4l-8 8M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>Pantalla completa</a></figcaption><a class="abrir" href="demo/" target="_blank" rel="noopener" title="Ver la propuesta en pantalla completa"><img id="imgD" src="img/movil_despues_hero.jpg" alt="Versión propuesta de la landing"></a></figure>
   </div>
   <p class="nota-sec" id="nota">Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y foto de Las Vegas en vez del archivo de Miami.</p>
 </section>
