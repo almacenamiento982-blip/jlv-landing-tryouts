@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Landing Tryouts Las Vegas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f5f4f6; --panel:#ffffff; --ink:#17151a; --ink2:#4d4953; --muted:#7a7580; --line:#e2dfe5;
+  --accent:#e8193f; --accent-soft:#fde8ec; --ok:#1d7a4a; --ok-soft:#e3f3ea; --warn:#9a6a00; --warn-soft:#fbf1d9;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121114; --panel:#1c1a1f; --ink:#f2f0f4; --ink2:#c4bfca; --muted:#8f8996; --line:#2f2c34;
+    --accent:#ff4a68; --accent-soft:#3a1720; --ok:#5cc98c; --ok-soft:#14301f; --warn:#e7b84a; --warn-soft:#352a10;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121114; --panel:#1c1a1f; --ink:#f2f0f4; --ink2:#c4bfca; --muted:#8f8996; --line:#2f2c34;
+  --accent:#ff4a68; --accent-soft:#3a1720; --ok:#5cc98c; --ok-soft:#14301f; --warn:#e7b84a; --warn-soft:#352a10;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Barlow,system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
+h1,h2,h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6vw,54px);text-transform:uppercase;letter-spacing:.5px}
+h2{font-size:clamp(26px,3.6vw,34px);text-transform:uppercase;letter-spacing:.4px;margin-bottom:14px}
+h3{font-size:22px;letter-spacing:.3px}
+p{margin:0 0 10px;max-width:72ch}
+a{color:var(--accent)}
+.eyebrow{font:600 13px/1 Barlow,sans-serif;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.lead{color:var(--ink2);font-size:18px;margin-top:12px}
+.aviso{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:14px;font-weight:600;background:var(--panel);border:1px solid var(--line);color:var(--ink2)}
+.chip.ok{background:var(--ok-soft);border-color:transparent;color:var(--ok)}
+.chip.warn{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
+section{margin-top:52px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+.seg{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px}
+.seg button{font:600 15px Barlow,sans-serif;border:0;background:transparent;color:var(--ink2);padding:7px 14px;border-radius:7px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:600 14px Barlow,sans-serif;border:1px solid var(--line);background:var(--panel);color:var(--ink2);padding:7px 12px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;align-items:start}
+.cmp.movil{max-width:860px}
+.cmp figure{margin:0;min-width:0}
+.cmp figcaption{font:700 15px/1 "Barlow Condensed",sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.cmp figcaption::before{content:"";width:10px;height:10px;border-radius:2px;background:var(--muted)}
+.cmp figure.d figcaption::before{background:var(--accent)}
+.cmp img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#000}
+.cmp.completa{max-height:78vh;overflow:auto;padding-right:4px}
+@media (max-width:720px){ .cmp.pc{grid-template-columns:1fr} }
+.nota-sec{color:var(--muted);font-size:14px;margin-top:10px}
+.tabla{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{font:600 13px Barlow,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.antes{color:var(--muted);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--muted) 55%,transparent)}
+td.despues{font-weight:600}
+td .tag{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--warn-soft);color:var(--warn)}
+.fotos{display:grid;gap:22px}
+.foto{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:14px}
+.foto .par{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.foto .par > div{min-width:0}
+.foto .par img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:8px;display:block}
+.foto .lbl{font:700 13px/1 "Barlow Condensed",sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.foto .lbl.d{color:var(--accent)}
+.foto ul{margin:0;padding-left:18px;color:var(--ink2)}
+.foto li{margin-bottom:4px}
+@media (max-width:560px){ .foto .par{grid-template-columns:1fr} }
+.pend{display:grid;gap:10px;counter-reset:n}
+.pend > div{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:10px;padding:12px 16px}
+.pend b{font-weight:600}
+.opciones{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.opciones span{font-size:14px;padding:4px 10px;border-radius:6px;background:var(--bg);border:1px solid var(--line)}
+footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Juventus Academy Las Vegas · Campaña de tryouts</div>
+  <h1>Landing de tryouts: antes y después</h1>
+  <p class="lead">Propuesta de mejoras para <a href="https://jacademylasvegas.com/tryouts-2026/" target="_blank" rel="noopener">jacademylasvegas.com/tryouts-2026</a>, la página a la que llevan los anuncios del competitivo (6 a 17 años). Las capturas son de la página real, con los cambios simulados en el navegador.</p>
+  <div class="aviso">
+    <span class="chip">Simulación · la web no se ha modificado</span>
+    <span class="chip ok">Ya hecho el 10-10: los 4 botones van al tryout 2026-27 y se quitó la sede Walter</span>
+    <span class="chip warn">Pendiente por aprobar: textos y fotos</span>
+  </div>
+</header>
+
+<section id="comparar">
+  <h2>Comparar por bloque</h2>
+  <div class="bar">
+    <div class="seg" role="group" aria-label="Dispositivo">
+      <button type="button" data-tam="movil" aria-pressed="true">Celular</button>
+      <button type="button" data-tam="pc" aria-pressed="false">Computador</button>
+    </div>
+    <div class="tabs" role="group" aria-label="Bloque">
+      <button type="button" data-blq="hero" aria-pressed="true">Portada</button>
+      <button type="button" data-blq="bienvenida" aria-pressed="false">Bienvenida y edades</button>
+      <button type="button" data-blq="pasos" aria-pressed="false">Cómo inscribirse</button>
+      <button type="button" data-blq="sede" aria-pressed="false">Sede</button>
+      <button type="button" data-blq="completa" aria-pressed="false">Página completa</button>
+    </div>
+  </div>
+  <div class="cmp movil" id="cmp">
+    <figure><figcaption>Antes (hoy)</figcaption><img id="imgA" src="img/movil_antes_hero.jpg" alt="Versión actual de la landing"></figure>
+    <figure class="d"><figcaption>Después (propuesta)</figcaption><img id="imgD" src="img/movil_despues_hero.jpg" alt="Versión propuesta de la landing"></figure>
+  </div>
+  <p class="nota-sec" id="nota">Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y foto de Las Vegas en vez del archivo de Miami.</p>
+</section>
+
+<section id="textos">
+  <h2>Cambios de texto</h2>
+  <p>Los anuncios dicen "Book your tryout · Ages 6–17"; se propone que la landing repita lo mismo para que el padre confirme en un segundo que llegó al lugar correcto y que su hijo entra en el rango.</p>
+  <div class="tabla">
+  <table>
+    <thead><tr><th style="width:15%">Dónde</th><th style="width:27%">Antes</th><th style="width:30%">Después</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><td>Título de portada</td><td class="antes">Tryouts Season 2026-27</td><td class="despues">Tryouts 2026-27</td><td>En celular el "27" queda solo en una línea.</td></tr>
+      <tr><td>Subtítulo nuevo</td><td class="antes">(no existe)</td><td class="despues">FREE TRYOUT · BOYS &amp; GIRLS · AGES 6–17</td><td>Edad y gratuidad antes del botón: filtra familias fuera del rango y quita la duda del costo.<br><span class="tag">Confirmar que el tryout es gratis</span></td></tr>
+      <tr><td>Los 4 botones</td><td class="antes">REGISTER NOW</td><td class="despues">BOOK YOUR FREE TRYOUT</td><td>Mismo llamado que el anuncio, y deja claro que es el tryout y no la inscripción a la temporada.</td></tr>
+      <tr><td>Titular "Boys and girls"</td><td class="antes">Boys and girls are welcome!</td><td class="despues">Boys and girls ages 6–17 are welcome!</td><td>Repite el rango en el bloque donde se habla de quién puede venir.</td></tr>
+      <tr><td>Paso 1</td><td class="antes">Register for tryouts at your preferred location by creating a Play Metrics account.</td><td class="despues">Register online in about 2 minutes. You’ll create a free PlayMetrics account and add your player’s info.</td><td>Dice cuánto tarda y que la cuenta es gratis; corrige "Play Metrics". Ya no hay "location" que elegir (queda solo Garside).</td></tr>
+      <tr><td>Paso 2</td><td class="antes">You’ll receive a confirmation email with your age group’s date and time…</td><td class="despues">Our staff will contact you within 48 hours to schedule your player’s tryout at Garside Junior. Follow us on Instagram for daily updates.</td><td>Promete lo que pasa en la práctica: el staff agenda el tryout. Dar un plazo baja la ansiedad del padre.<br><span class="tag">Pendiente por aprobar el plazo</span></td></tr>
+      <tr><td>Paso 3</td><td class="antes">After the tryout, please allow a few days to a week to receive your invitation letter.</td><td class="despues">After the tryout, our coaches will tell you which team fits your player, usually within a week.</td><td>Mismo plazo, en tono más cercano: habla del equipo del jugador, no de una "carta".</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="nota-sec">No cambian: enlaces de los botones (programa 2026-27), píxel de Meta, evento Lead, diseño, colores ni el resto de los textos.</p>
+</section>
+
+<section id="fotos">
+  <h2>Fotos que se proponen cambiar</h2>
+  <div class="fotos">
+    <article class="foto">
+      <h3>1 · Fondo de la portada</h3>
+      <div class="par">
+        <div><div class="lbl">Hoy</div><img src="img/actual_hero_miami.jpg" alt="Fondo actual: jugador en una cancha de Miami"></div>
+        <div><div class="lbl d">Propuesta</div><img src="img/hero_accion_lv.jpg" alt="Tres jugadores en acción con el uniforme oficial y el skyline de Las Vegas"></div>
+      </div>
+      <ul>
+        <li>La foto actual es del archivo de Miami (el nombre del archivo lo dice: <i>bg-tryouts-miami</i>) y es lo primero que ve el padre que llega del anuncio.</li>
+        <li>La propuesta es la misma imagen del anuncio "Ask these five questions": jugadores en acción, uniforme oficial y el skyline de Las Vegas. El padre ve en la web lo mismo que vio en Instagram.</li>
+        <li>Está hecha con IA, como los anuncios. Para la web final se produce en dos formatos (ancho para computador y vertical para celular). En computador, la simulación usa una versión provisional.</li>
+      </ul>
+    </article>
+    <article class="foto">
+      <h3>2 · Foto de la sede</h3>
+      <div class="par">
+        <div><div class="lbl">Hoy</div><img src="img/actual_sede.jpg" alt="Foto actual de la sede: cancha con palmeras"></div>
+        <div><div class="lbl d">Propuesta</div><img src="img/garside_campo_lv.jpg" alt="Cancha real de Las Vegas durante un tryout"></div>
+      </div>
+      <ul>
+        <li>La foto actual no parece Garside Junior (palmeras y paisaje tipo Miami). Un padre de Las Vegas que conoce la escuela lo nota.</li>
+        <li>La propuesta es un cuadro real del video de cierre de los tryouts de Las Vegas (cancha con la escuela al fondo), mejorado con Upscayl.</li>
+        <li>Pendiente por confirmar que esa cancha es Garside. Lo ideal: una foto propia de Garside tomada por el videógrafo nuevo, con jugadores con el uniforme de Juventus.</li>
+      </ul>
+    </article>
+    <article class="foto">
+      <h3>Se mantienen</h3>
+      <ul>
+        <li>Foto de estudio de las cuatro jugadoras y la de niño y niña: son profesionales, con el uniforme oficial, y refuerzan "boys and girls".</li>
+        <li>Fondo de pasto de la sección de bienvenida: es neutro y no se reconoce como otra ciudad.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="pendiente">
+  <h2>Pendiente por aprobar</h2>
+  <div class="pend">
+    <div><b>Textos.</b> Aprobar la tabla de arriba tal cual o con ajustes.</div>
+    <div><b>Plazo del paso 2.</b> Debe ser uno que el staff pueda cumplir siempre.
+      <div class="opciones"><span>within 48 hours</span><span>within 2 business days</span><span>within a few days</span></div></div>
+    <div><b>"Free tryout".</b> Confirmar que el tryout no tiene costo (en la reunión del 5-oct se dijo que sí).</div>
+    <div><b>Fotos.</b> Aprobar la portada con la imagen del anuncio y definir la foto de la sede (cuadro del video o foto nueva de Garside).</div>
+  </div>
+  <p class="nota-sec">Con la aprobación, los cambios se aplican en Elementor en unos 15 minutos. Ya hay un respaldo completo de la página (10-10) para volver atrás si hace falta.</p>
+</section>
+
+<footer>Juventus Academy Las Vegas · Propuesta de landing de tryouts · 10-10-2026 · Página interna, no indexada.</footer>
+</div>
+
+<script>
+(function () {
+  var tam = 'movil', blq = 'hero';
+  var notas = {
+    hero: 'Portada: título en una sola línea, edades y "gratis" a la vista antes del botón, y foto de Las Vegas en vez del archivo de Miami.',
+    bienvenida: 'Bienvenida: mismos textos y fotos; cambian los botones y el titular "Boys and girls" ahora dice el rango de edades.',
+    pasos: 'Cómo inscribirse: los tres pasos dicen cuánto tarda, quién llama y cuándo se sabe el resultado.',
+    sede: 'Sede: foto real de una cancha de Las Vegas en vez de la foto con palmeras.',
+    completa: 'Página completa: desliza dentro del recuadro para ver toda la landing.'
+  };
+  var cmp = document.getElementById('cmp'), A = document.getElementById('imgA'), D = document.getElementById('imgD'), nota = document.getElementById('nota');
+  function pintar() {
+    A.src = 'img/' + tam + '_antes_' + blq + '.jpg';
+    D.src = 'img/' + tam + '_despues_' + blq + '.jpg';
+    cmp.className = 'cmp ' + tam + (blq === 'completa' ? ' completa' : '');
+    nota.textContent = notas[blq];
+    document.querySelectorAll('[data-tam]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.tam === tam); });
+    document.querySelectorAll('[data-blq]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.blq === blq); });
+  }
+  document.querySelectorAll('[data-tam]').forEach(function (b) { b.addEventListener('click', function () { tam = b.dataset.tam; pintar(); }); });
+  document.querySelectorAll('[data-blq]').forEach(function (b) { b.addEventListener('click', function () { blq = b.dataset.blq; pintar(); }); });
+  ['movil', 'pc'].forEach(function (t) { ['hero', 'bienvenida', 'pasos', 'sede'].forEach(function (k) { ['antes', 'despues'].forEach(function (f) { var i = new Image(); i.src = 'img/' + t + '_' + f + '_' + k + '.jpg'; }); }); });
+})();
+</script>
+</body>
+</html>
